@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="propiedades_inmobiliarias_action" model="ir.actions.act_window">
+        <field name="name">Propiedades Inmobiliarias</field>
+        <field name="res_model">propiedades.inmobiliarias</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    
+</odoo>

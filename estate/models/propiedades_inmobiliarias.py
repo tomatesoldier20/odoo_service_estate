@@ -30,12 +30,9 @@ class PropiedadesInmobiliarias(models.Model):
         ('vendida', 'Vendida'),
         ('cancelada', 'Cancelada'),
     ], default='Nueva', string="Estado"),
+    tipo_propiedad_id = fields.Many2one('tipo.propiedades.inmobiliarias', string="Tipo de Propiedad")
+    comprador = fields.Many2one('tipo.propiedades.inmobiliarias', string="Comprador")  
+    vendedor = fields.Many2one('tipo.propiedades.inmobiliarias', string="Vendedor")     
 
     
-    #Campos Automaticos
-    models.Model.id = fields.Integer(string="ID", readonly=True)
-    models.Model.create_date = fields.Datetime(string="Fecha de Creación", readonly=True)
-    models.Model.create_uid = fields.Many2one('res.users', string="Usuario Creador", readonly=True)
-    models.Model.write_date = fields.Datetime(string="Fecha de Última Modificación", readonly=True)
-    models.Model.write_uid = fields.Many2one('res.users', string="Usuario Última Modificación", readonly=True)
-    
+

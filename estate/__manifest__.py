@@ -9,6 +9,7 @@
     ['base'],
     'data': [
         'security/ir.model.access.csv',
+        'views/tipo_propiedades_inmobiliarias.xml',
         'views/propiedades_inmobiliarias.xml',
         'views/estate_menu.xml'
     ],

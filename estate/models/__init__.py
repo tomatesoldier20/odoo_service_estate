@@ -1,1 +1,1 @@
-from . import propiedades_inmobiliarias
+from . import propiedades_inmobiliarias, tipo_propiedades_inmobiliarias

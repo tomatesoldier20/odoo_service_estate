@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Vista Tree -->
+    <record id="view_tipo_propiedades_inmobiliarias_tree" model="ir.ui.view">
+        <field name="name">tipo.propiedades.inmobiliarias.tree</field>
+        <field name="model">tipo.propiedades.inmobiliarias</field>
+        <field name="arch" type="xml">
+            <tree string="Tipos de Propiedades Inmobiliarias">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Acción -->
+    <record id="action_tipo_propiedades_inmobiliarias" model="ir.actions.act_window">
+        <field name="name">Tipos de Propiedades Inmobiliarias</field>
+        <field name="res_model">tipo.propiedades.inmobiliarias</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

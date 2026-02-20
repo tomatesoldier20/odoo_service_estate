@@ -7,9 +7,9 @@ class PropiedadesInmobiliarias(models.Model):
     name = fields.Char(required=True)
     descripcion = fields.Text()
     codigo_postal = fields.Char()
-    fecha_disponibilidad = fields.Date()
+    fecha_disponibilidad = fields.Date(copy=False)
     precio_esperado = fields.Float(required=True)
-    precio_venta = fields.Float(readonly = True)
+    precio_venta = fields.Float(readonly = True, copy=False)
     dormitorios = fields.Integer()
     superficie_util = fields.Integer()
     fachadas = fields.Integer()
@@ -21,7 +21,15 @@ class PropiedadesInmobiliarias(models.Model):
         ('sur', 'Sur'),
         ('este', 'Este'),
         ('oeste', 'Oeste'),
-    ], string="Orientación del Jardín")
+    ], string="Orientación del Jardín"),
+    active = fields.Boolean(default=True),
+    state = fields.Selection([
+        ('nueva', 'Nueva'),
+        ('oferta_recibida', 'Oferta recibida'),
+        ('oferta_aceptada', 'Oferta aceptada'),
+        ('vendida', 'Vendida'),
+        ('cancelada', 'Cancelada'),
+    ], default='Nueva', string="Estado"),
 
     
     #Campos Automaticos

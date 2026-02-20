@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <menuitem id="propiedades_inmobiliarias_menu_root" name="Propiedades Inmobiliarias">
-       <menuitem id="propiedades_inmobiliarias_first_level_menu" name="First Level">
-            <menuitem id="propiedades_inmobiliarias_menu_action" action="propiedades_inmobiliarias_action"/>
-       </menuitem> 
-    </menuitem>
+   <menuitem id="propiedades_inmobiliarias_first_level_menu" name="First Level">
+        <menuitem id="propiedades_inmobiliarias_menu_action" action="action_propiedades_inmobiliarias"/>
+   </menuitem> 
+</menuitem>
     
 </odoo>
